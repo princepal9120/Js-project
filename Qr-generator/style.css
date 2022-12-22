@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+    margin: 0;  
+    font-family: Arial, Helvetica, sans-serif; 
+
+}
+.container {
+  background-color: beige;
+  border: 2px solid black;
+  padding: 1rem;
+  height: 220px;
+  width: 350px;
+  transition: height 0.2s ease;
+}
+.container.active {
+  height: 600px;
+}
+.box {
+  background-color: beige;
+}
+.box h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.box p {
+  font-size: 1rem;
+  text-align: center;
+}
+.form input {
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 1rem 0.5rem;
+  width: 100%;
+}
+.form button {
+  background-color: rebeccapurple;
+  border: 2px;
+  border-radius: 5px;
+  align-items: center;
+  width: 100%;
+
+  margin: 0.5rem;
+  padding: 0.5rem 0.4rem;
+}
+.qr-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  border: 2px solid #ccc;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.container.active .qr-code {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity .1s .01s ease;
+}

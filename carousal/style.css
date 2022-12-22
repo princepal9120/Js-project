@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+
+  /* flex-direction: row;
+  padding: 2rem; */
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+.carousel{
+  box-shadow: rgba(0,0,0, 0.3);
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+}
+
+
+.image-container{
+  display: flex;
+  transition: transform 0.3s linear;
+  transform: translateX(0);
+}
+img {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+}
